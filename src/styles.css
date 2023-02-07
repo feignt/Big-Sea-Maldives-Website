@@ -1,0 +1,193 @@
+/* Intro seciton */
+
+body{
+    margin: 0;
+    color:white;
+    font-family: 'Lilita One', cursive;
+}
+.intro-bg{
+    background-image:url("./img/title.jpg");
+    width: 100%;
+    min-height: 750px;
+    background-color: blue;
+    position:relative;
+}
+.intro-heading{
+    margin:0.2rem;
+}
+.intro-desc{
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    font-size: 1.3rem;
+}
+.navbar{
+    color: grey;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h6{
+    color: white;
+}
+.divider{
+    position:relative;
+    top: 70px;
+    
+}
+hr{
+    height:1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:white;
+    background-color: white;
+    border:0;
+    width: 97%;
+}
+.intro-inner{
+position:absolute;
+width:30%;
+left:5%;
+top:35%;
+}
+.spacer{
+    /* aspect-ratio: 960/540; */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.wave-layer{
+    min-height: fit-content;
+    background-image: url(./img/layered-waves-haikei.svg);
+    background-color: #ECF9FF;
+    color:black;
+}
+
+/* Seafood */
+
+.seafood-img:hover{
+
+    opacity: 0.9;
+}
+.hidden-sf{
+    opacity: 0;
+}
+.show-sf{
+    animation-duration: 2s;
+    animation-name: animate-quilt;
+    animation-fill-mode: forwards;
+}
+@keyframes animate-quilt {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+       
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(1.2);
+    } 
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+}
+/* Castello */
+
+#castello{
+    
+    min-height: 100vh;
+    background-color: #0A2647;
+    padding-left: 4vw;
+    padding-right: 4vw;
+
+   
+}
+.castello-img{
+    width:20vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.castello-card1{
+    animation-fill-mode: forwards;
+    animation-delay:200ms;
+}
+.castello-card2{
+    animation-fill-mode: forwards;
+    animation-delay:700ms
+}
+.castello-card3{
+    animation-fill-mode: forwards;
+    animation-delay:1200ms;
+}
+.castello-card4{
+    animation-fill-mode: forwards;
+    animation-delay:1700ms;
+}
+.hidden{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show{
+    
+    animation-duration: 1s;
+    animation-name: animate-card;
+    animation-timing-function: ease-out;
+
+}
+@keyframes animate-card {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        
+    }
+}
+
+/* New Section */
+#new-sec{
+    min-height: 100vh;
+    background-color: #0A2647;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vh;
+}
+.new-sec-header{
+    text-align: center;
+    margin-bottom: 0;
+}
+.show-new{
+    animation-duration: 1s;
+    animation-name: animate-new;
+    animation-timing-function: ease-out;
+}
+@keyframes animate-new {
+    0%{
+        opacity: 0;
+        transform: translate(100%, 25%) rotateY(120deg);
+        
+        
+    }
+    70%{
+        opacity: 1;
+        transform: translate(-5%,0) rotateY(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0) rotateY(0deg);
+    }
+}
